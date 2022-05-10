@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>도로명 주소 검색하기</title>
+    </head>
+    <body>
+    <br/>
+    <center>
+        <table width="750">
+            <tr>
+                <th><font size="+2">도로명 주소 검색하기</font>
+                </th>
+            </tr>
+        </table>
+        <table width="750">
+        <br/>
+        <br/>
+        <tr>
+            <td>
+                <table width="100%">
+                    <td>시도명</td>
+                    <td>시군구명</td>
+                    <td>읍면동명</td>
+                    <td>법정리명</td>
+                </table>
+                <hr>
+                    <table width="100%">
+                    <td>
+                    <select name="job">
+                        <option value="">시도명</option>
+                        <option value="학생">시.군.구</option>
+                        <option value="회사원">회사원</option>
+                        <option value="기타">기타</option>
+                    </select>
+                    </td>
+                    <td>
+                    <select name="job">
+                        <option value="">시군구명</option>
+                        <option value="학생">학생</option>
+                        <option value="회사원">회사원</option>
+                        <option value="기타">기타</option>
+                    </select>
+                    </td>
+                    <td>
+                    <select name="job">
+                        <option value="">읍면동명</option>
+                        <option value="학생">학생</option>
+                        <option value="회사원">회사원</option>
+                        <option value="기타">기타</option>
+                    </select>
+                    </td>
+                    <td>
+                        <select name="job">
+                            <option value="">법정리명</option>
+                            <option value="학생">학생</option>
+                            <option value="회사원">회사원</option>
+                            <option value="기타">기타</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id='road' name='road' style="width: 150px; height: 22px"; onChange="frmJuso.submit()";>
+                            <option value="-1">▽ 도로명</option>
+                        </select>
+
+                    </td>
+                    <td width='3%'><input type="submit" value="검 색" ></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </body>
+</html>
