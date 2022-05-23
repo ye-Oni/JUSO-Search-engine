@@ -8,7 +8,7 @@
 프로그램명: 도로명 주소 검색 페이지
 모  듈  명: roadCode.php
 작  성  일: 2022.05.11
-최종수정일:
+최종수정일: 2022.05.20
 최종수정자:
 수정이력:
 +-------------------------------------------------------------------------+
@@ -151,7 +151,7 @@ include_once("/var/www/html/juso/cfg/db.php");
                     </td>
 
                     <td>
-                        // 도로명 주소 검색
+<!--                        // 도로명 주소 검색-->
                         <?php
                         // 도로명 ID 값 저장
                         if(isset($_POST['doroID'])){
@@ -184,7 +184,7 @@ include_once("/var/www/html/juso/cfg/db.php");
                         oci_execute($stid) ;
                         ?>
                         
-                        // 검색 버튼을 누른 후(or 누름과 동시에) 적용 되는 결과
+<!--                        // 검색 버튼을 누른 후(or 누름과 동시에) 적용 되는 결과-->
                    <input type="submit" value="검 색" onchange="frmRoadCode.submit()">
                         <?php
                         if ($doro!=null){
@@ -219,7 +219,7 @@ include_once("/var/www/html/juso/cfg/db.php");
                 <br/>
                 <table>
                     
-                <a href="/juso/juso.html" alt='메인'>메인으로 이동</a>
+                <a href="/juso/index.html" alt='메인'>메인으로 이동</a>
                 </table>
             </td>
         </tr>
